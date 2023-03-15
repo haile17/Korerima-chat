@@ -37,8 +37,8 @@ const Register = () => {
                     photoURL: downloadURL,
                   });
                   await setDoc(doc(db, "users", res.user.uid),{
-                    uid: res.user.uid,
                     displayName,
+                    uid: res.user.uid,
                     email,
                     photoURL: downloadURL,
                   });

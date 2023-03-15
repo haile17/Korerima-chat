@@ -6,10 +6,11 @@ import { db } from '../firebase';
 
 const Chats = () => {
 
+
     const [chats, setChats] = useState([])
 
-    const {currentUser} = useContext(AuthContext);
-    const { dispatch } = useContext(ChatContext)
+    const { currentUser } = useContext(AuthContext);
+    const { dispatch } = useContext(ChatContext);
 
     useEffect(()=> {
         const getChats = () => {
@@ -23,6 +24,7 @@ const Chats = () => {
         };
 
         currentUser.uid && getChats()
+
     }, [currentUser.uid]);
 
     const handleSelect = (u) => {
