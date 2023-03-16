@@ -11,12 +11,14 @@ const Search = () => {
     const {currentUser} = useContext(AuthContext)
 
     const handleSearch = async () => {
-    const q = query(collection(db, "users"),where("displayName", "==", username));
+    const q = query(
+        collection(db, "users"),
+        where("displayName", "==", username));
 
     try{
         const querySnapshot = await getDocs(q);
         querySnapshot.forEach((doc) => {
-            setUser(doc.data())
+            setUser(doc.data());
         });
     } catch(err) {
         setErr(true);
@@ -48,7 +50,7 @@ const Search = () => {
                 },
                 [combinedId+".date"]: serverTimestamp()
             });   
-            await updateDoc(doc(db, "userChats", currentUser.uid), {
+            await updateDoc(doc(db, "userChats", user.uid), {
                 [combinedId+".userInfo"]: {
                     uid:currentUser.uid,
                     displayName: currentUser.displayName,
@@ -68,14 +70,15 @@ const Search = () => {
                 <input type="text" placeholder='Find a user' onKeyDown={handleKey} onChange={e=>setUsername(e.target.value)} value={username} />
             </div>
             {err && <span> User not found!</span>}
-            {user && <div className='userChat' onClick={handleSelect}>
+            {user && (
+                <div className='userChat' onClick={handleSelect}>
                 <img src={user.photoURL} alt="" />
                 <div className="userChatInfo">
                     <span>{user.displayName}</span>
                 </div>
-            </div>}
+            </div>)}
         </div>
     );
 };
 
-export default Search
+export default Search;

@@ -8,7 +8,7 @@ import { AuthContext } from './context/AuthContext';
 
 function App() {
 
-  const {currentUser} = useContext(AuthContext)
+  const { currentUser } = useContext(AuthContext)
 
   const ProtectedRoute = ({childern}) =>{
     if(!currentUser){
@@ -23,12 +23,15 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/">
-          <Route index element={
+          <Route 
+          index element={
           <ProtectedRoute>
             <Home />
-          </ProtectedRoute>} />
+          </ProtectedRoute>
+        } 
+        />
           <Route path="login" element={<Login />} />
-          <Route path="register" index element={<Register />} />    
+          <Route path="register" element={<Register />} />    
         </Route>
       </Routes>    
     </BrowserRouter>

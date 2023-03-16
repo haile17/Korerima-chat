@@ -3,8 +3,6 @@ import { getAuth} from "firebase/auth";
 import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
 
-
-
 const firebaseConfig = {
   apiKey: "AIzaSyBYDxtcnB_s5odMdfkO4B6rxsBfB8x27f4",
   authDomain: "korerima-chat-4c24c.firebaseapp.com",
