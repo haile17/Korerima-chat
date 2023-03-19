@@ -54,11 +54,12 @@
                 border-bottom: 1px solid #f0a65d;
             &::placeholder{
                 color: rgb(175, 175, 175);
-                font-family: 'Courier New', Courier, monospace;
+                font-family: 'Book Antiqua', 'Courier New', Courier, monospace;
             }
             }
             button{
                 background-color: #f0a65d;
+                border-radius: 5px;
                 color: white;
                 padding: 10px;
                 border: none;
