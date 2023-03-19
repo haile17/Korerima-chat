@@ -65,8 +65,8 @@ const Input = () => {
             [data.chatId + ".date"]: serverTimestamp(),
         });
 
-        setText("")
-        setImg(null)
+        setText("");
+        setImg(null);
     };
     return (
         <div className='input'>
