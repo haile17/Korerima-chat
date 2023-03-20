@@ -65,13 +65,13 @@ const Register = () => {
         <span className="logo">ኮረሪማ</span>
         <span className="title">Register</span>
         <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="display name" />
-          <input type="email" placeholder="email" />
-          <input type="password" placeholder="password" />
+          <input type="text" placeholder="Display name" />
+          <input type="email" placeholder="K-mail" />
+          <input type="password" placeholder="Password" />
           <input style={{ display: "none" }} type="file" id="file" />
           <label htmlFor="file">
             <img src={Add} alt="" />
-            <span>please enter your profile picture</span>
+            <span>Please enter your profile picture</span>
           </label>
           <button disabled={loading}>Sign up</button>
           {loading && "Uploading the image please wait..."}

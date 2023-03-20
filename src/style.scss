@@ -25,7 +25,7 @@
     text-align: center;
 
     .formWrapper{
-        background-color: white;
+        background-color: 	#fceb91;
         padding: 20px 60px;
         border-radius: 10px;
         display: flex;
@@ -34,14 +34,16 @@
         align-items: center;
 
         .logo{
-            color: #f0a65d;
+            color: #4e4c11;
             font-weight: bold;
-            font-size: 30px;
+            font-size: 40px;
+            
            
         }
         .title{
-            color: #f0a65d;
+            color: #4e4c11;
             font-size: 12px;
+            font-weight: bold;
         }
         form {
             display: flex;
@@ -51,14 +53,17 @@
             input{
                 padding: 15px;
                 border: none;
-                border-bottom: 1px solid #f0a65d;
+                background-color: transparent;
+                border-bottom: 1px solid #4e4c11;
+                font-size: 16px;
             &::placeholder{
-                color: rgb(175, 175, 175);
+                color:	#7f6f3c;
+                opacity: 75%;
                 font-family: 'Book Antiqua', 'Courier New', Courier, monospace;
             }
             }
             button{
-                background-color: #f0a65d;
+                background-color: #93913a;
                 border-radius: 5px;
                 color: white;
                 padding: 10px;
@@ -70,7 +75,7 @@
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                color: #f0a65d;
+                color: #4e4c11;
                 font-size: 12px;
             }
             img{
@@ -78,7 +83,7 @@
             }
         }
         p{
-            color: #f0a65d;
+            color: #4e4c11;
             font-size: 12px;
             margin-top: 10px;
         }
