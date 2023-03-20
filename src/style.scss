@@ -100,7 +100,7 @@
     justify-content: center;
 
    .container{
-        border: 1px solid 	#93913a;
+        border: 1px solid 	#aaaa77;
         border-radius: 10px;
         width: 65%;
         height: 80%;
@@ -111,8 +111,9 @@
             width: 90%;
         }
 
-        .sidebar{flex: 1;
-            background-color: 	#93913a;
+        .sidebar{
+            flex: 1;
+            background-color: #aaaa77;
             position: relative;
 
             .navbar{
@@ -120,7 +121,7 @@
                 align-items: center;
                 background-color: #93913a;
                 height: 50px;
-                border-right: 1px solid #79761c;
+                border-right: 1px solid #aaaa77;
                 padding: 10px;
                 justify-content: space-between;
                 color: 	#4e4c11;
@@ -184,17 +185,17 @@
                 cursor: pointer;
 
                 &:hover{
-                    background-color: #2f2d52;
+                    background-color: #93913a;
                 }
                 img{
-                    width: 40px;
-                    height: 40px;
+                    width: 30px;
+                    height: 30px;
                     border-radius: 50%;
                     object-fit: cover;
                 }
                 .userChatInfo{
                     span{
-                        font-size: 18px;
+                        font-size: 15px;
                         font-weight: bolder;
                     }
                     p{
@@ -227,7 +228,7 @@
                 }
             }
             .messages{
-                background-color: #ddddf7;
+                background-color: 	#e4e4ba;
                 padding: 10px;
                 height: calc(100% - 160px);
                 overflow: scroll ;
@@ -242,7 +243,7 @@
                         display: flex;
                         flex-direction: column;
                         color: grey;
-                        font-weight: 300;
+                        font-weight: 200;
                         img{
                             width: 40px;
                             height: 40px;
@@ -257,7 +258,7 @@
                         gap: 10px;
 
                         p{
-                            background-color: white;
+                            background-color: #aaaa77;
                             padding: 10px 20px;
                             border-radius: 0px 10px 10px 10px;
                             max-width: max-content;
@@ -272,7 +273,7 @@
                         .messageContent{
                             align-items: flex-end;
                             p{
-                                background-color: cornflowerblue;
+                                background-color: #4e4c11;
                                 color: white;
                                 border-radius: 10px 0px 10px 10px;
                             }
@@ -296,7 +297,7 @@
                     outline: none;
 
                     &::placeholder{
-                        color: lightgrey;
+                        color: #aaaa77;
                     }
                 }
                 .send{
@@ -312,7 +313,8 @@
                         border: none;
                         padding: 10px 15px;
                         color: white;
-                        background-color: cornflowerblue;
+                        border-radius: 10px;
+                        background-color: #4e4c11;
                     }
                 }
             }
